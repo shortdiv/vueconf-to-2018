@@ -23,6 +23,15 @@ export default new Router({
         import(/* webpackChunkName: "unbreakable-form" */ "./views/UnbreakableForm.vue")
     },
     {
+      path: "/unbreakable-form-too",
+      name: "Unbreakable Form Too",
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "unbreakable-form" */ "./views/UnbreakableFormToo.vue")
+    },
+    {
       path: "/dynamic-form",
       name: "Dynamic Form",
       component: () =>

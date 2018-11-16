@@ -78,13 +78,6 @@ export default {
 
 <style lang="scss" scoped>
 #vue {
-  background-color: #3bb881;
-}
-#react {
-  background-color: #61dafb;
-}
-#vue,
-#react {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   position: relative;
   display: flex;
@@ -118,7 +111,7 @@ label {
 .tea-label {
   display: block;
   position: relative;
-  color: rgba(14, 30, 37, 0.54);
+  color: white;
   font-weight: 300;
   font-size: 1.35em;
   padding: 10px 10px 10px 30px;
@@ -128,12 +121,12 @@ label {
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
   &.disabled {
-    opacity: 0.5;
+    opacity: 0.2;
   }
   &:before {
     content: "";
     display: inline-block;
-    border: 5px solid #282c34;
+    border: 5px solid white;
     border-radius: 100%;
     height: 25px;
     width: 25px;
@@ -159,7 +152,7 @@ label {
   &:after {
     content: "";
     display: block;
-    background: #282c34;
+    background: #3bb881;
     border-radius: 100%;
     height: 15px;
     width: 15px;
